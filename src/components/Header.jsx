@@ -13,7 +13,7 @@ export default function Header() {
           <a href="https://linkedin.com" className="text-2xl hover:text-gray-300 transition-colors">
             <FaLinkedin />
           </a>
-          <a href="mailto:john@example.com" className="text-2xl hover:text-gray-300 transition-colors">
+          <a href="mailto:ebrahem.hesham.ahmed@gmail.com" className="text-2xl hover:text-gray-300 transition-colors">
             <FaEnvelope />
           </a>
         </div>
