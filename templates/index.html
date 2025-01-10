@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibrahem Elsherif</title>
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+</head>
+<body class="min-h-screen bg-gray-50">
+    <!-- Header -->
+    <header class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold mb-4">Ibrahem Elsherif</h1>
+            <p class="text-xl text-gray-300 mb-6">Machine Learning Engineer</p>
+            <div class="flex space-x-4">
+                <a href="https://github.com" class="text-2xl hover:text-gray-300 transition-colors">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com" class="text-2xl hover:text-gray-300 transition-colors">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:john@example.com" class="text-2xl hover:text-gray-300 transition-colors">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section class="py-16 bg-white" id="about">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">About Me</h2>
+            <div class="max-w-2xl">
+                <p class="text-gray-600 mb-4">
+                    AI and Machine Learning Engineer specializing in developing cutting-edge solutions across Computer Vision, NLP, and Deep Learning domains.
+                    I transform complex data challenges into practical, value-driven applications that help businesses thrive in AI.
+                </p>
+                <p class="text-gray-600">
+                    When I'm not coding, you can find me exploring new technologies, contributing to open-source
+                    projects, or sharing knowledge with the Ai community.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="py-16 bg-gray-50" id="projects">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Stock Price Prediction </h3>
+                    <p class="text-gray-600 mb-4">Stock Price Prediction using LSTM</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Tensorflow</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Numpy</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Pandas</span>
+                    </div>
+                    <a href="#" class="text-blue-600 hover:text-blue-800">View Project →</a>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="py-16 bg-white" id="contact">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Contact Me</h2>
+            <div class="max-w-lg mx-auto">
+                <form action="{{ url_for('submit') }}" method="POST" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                        <input type="text" id="name" name="name" required
+                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" id="email" name="email" required
+                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="4" required
+                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"></textarea>
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2024 Ibrahem Elsherif. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
